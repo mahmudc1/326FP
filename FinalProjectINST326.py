@@ -149,7 +149,7 @@ def main(vinylfile):
 if __name__ == "__main__":
     """After the final purchase is recieved, this method allows the program to end with the final 
     purchase price for all metadata selected in the previous method. The purchase was based on the
-    additions from all pieces of metadata from the vinylid section (1) of 'vinyldata1.csv', the dataframe used
+    additions from all pieces of metadata from the vinylid section (1) of 'vinyldata.csv', the dataframe used
     for this code.        
     """
-    main("vinyldata1.csv")
+    main("vinyldata.csv")
