@@ -60,22 +60,6 @@ class Vinylrecord:
         """)
         n = int(input("pick a number to view your selected metadata "))
         return self.df.iloc[:,n - 1]
-
-    def record_info(record):
-      """
-      Args: 
-          record (str): name of the record  
-      Returns:
-          Series: the metadata of the record 
-      Side effects:
-          printing a message: if the record doesnt exist
-      """
-      df = pd.read_csv("vinyldata.csv")
-      for i in range(len(df)):
-        for each in df.loc[i]:
-          if each == record:
-            return df.loc[i]   
-      print("record doesnt exist")
     
     def purchase(self, vinylid):
         self.cart.append(vinylid)
